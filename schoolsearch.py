@@ -190,6 +190,6 @@ def main():                                                                     
     if students is not None:                                                    #checks parsing success
         receive_input(students)                                                 #starts input loop
 
-
+ 
 if __name__ == "__main__":                                                      #runs main
     main()
