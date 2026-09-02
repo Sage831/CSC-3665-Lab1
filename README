@@ -1,0 +1,28 @@
+Lab 1: School Search
+Team Member: Sage Kaplan
+
+Requirements:
+Python 3
+No additional packages are required.
+
+Running the Program:
+No compilation is required.
+
+Place schoolsearch.py and students.txt in the same directory.
+
+From that directory, run:
+python3 schoolsearch.py
+
+The program will display:
+Input Command:
+
+Enter search commands at the prompt.
+Enter "Q" or "Quit" to terminate the program.
+
+Files:
+schoolsearch.py: School search program
+students.txt: Student data file
+tests.txt: Test suite
+tests.out: Output from testing
+writeup-lab1.pdf: Lab writeup
+README: Instructions for running the program
