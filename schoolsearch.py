@@ -174,9 +174,9 @@ def receive_input(students):                                                    
 
 def main():                                                                     #runs school search program
     students = parse_students("students.txt")                                   #parses student file
-    if students is not None:                                                    #checks that parsing succeeded
-        receive_input(students)                                                 #starts command input loop
+    if students is not None:                                                    #checks parsing success
+        receive_input(students)                                                 #starts input loop
 
 
-if __name__ == "__main__":                                                      #runs main when program is executed
+if __name__ == "__main__":                                                      #runs main
     main()
