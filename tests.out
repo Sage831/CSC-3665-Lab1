@@ -1,0 +1,78 @@
+/usr/local/bin/python3 "/Users/sage/Library/Mobile Documents/com~apple~CloudDocs/Cal Poly/Classes/AAA Current/CSC 3665/Labs/Lab 1/CSC-3665-Lab1/schoolsearch.py"
+sage@Sage Kaplan CSC-3665-Lab1 % /usr/local/bin/python3 "/Users/sage/Library/Mobile Documents/com~apple~CloudDocs/Cal Poly/Clas
+ses/AAA Current/CSC 3665/Labs/Lab 1/CSC-3665-Lab1/schoolsearch.py"
+Input Command: G: SWEDLUND
+Input Command: S: SWEDLUND
+SWEDLUND,SHARRI,3,107,FAFARD,ROCIO
+Input Command: S: SWEDLUND B
+SWEDLUND,SHARRI,55
+Input Command: Teacher: HANTZ
+CORKER,CARTER
+IMMERMAN,DEVIN
+RAPOSE,ALONZO
+OGAS,ERVIN
+MASSART,ELDON
+BEX,TAMESHA
+Input Command: G: 2
+WOOLERY,NOLAN
+VILARDO,EMMANUEL
+LIBRANDI,TODD
+HAVIR,BOBBIE
+SARAO,DIEDRA
+VANCOTT,MIKE
+WICINSKY,TERESE
+KOZOLA,BUSTER
+MULLINGS,LEIGHANN
+BUSSMANN,BILLY
+BERBES,DICK
+MULGREW,RANDELL
+TOWLEY,LANE
+Input Command: B: 55
+SWEDLUND,SHARRI,3,107
+ZAPPAVIGNA,ELLIOTT,6,106
+SAENPHIMMACHA,NUMBERS,6,111
+BOYTER,WAN,6,102
+KOZOLA,BUSTER,2,108
+DEMARTINI,DEWAYNE,6,102
+BEX,TAMESHA,4,105
+WERST,LEON,6,111
+LAMKIN,TAMA,6,111
+Input Command: G: 3 L   
+CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
+Input Command: Grade: 2 H
+WICINSKY,TERESE,3.22,HAMER,GAVIN,53
+Input Command: A: 3
+3,3.05
+Input Command: I  
+0: 0
+1: 2
+2: 13
+3: 9
+4: 15
+5: 0
+6: 21
+Input Command: Info
+0: 0
+1: 2
+2: 13
+3: 9
+4: 15
+5: 0
+6: 21
+Input Command: INFO
+Input Command: Q
+
+sage@Sage Kaplan CSC-3665-Lab1 % /usr/local/bin/python3 "/Users/sage/Library/Mobile Documents/com~apple~CloudDocs/Cal Poly/Clas
+ses/AAA Current/CSC 3665/Labs/Lab 1/CSC-3665-Lab1/schoolsearch.py"
+Input Command: G: 24
+Input Command: Q
+
+sage@Sage Kaplan CSC-3665-Lab1 % /usr/local/bin/python3 "/Users/sage/Library/Mobile Documents/com~apple~CloudDocs/Cal Poly/Clas
+ses/AAA Current/CSC 3665/Labs/Lab 1/CSC-3665-Lab1/schoolsearch.py"
+students.txt not found
+
+sage@Sage Kaplan CSC-3665-Lab1 % /usr/local/bin/python3 "/Users/sage/Library/Mobile Documents/com~apple~CloudDocs/Cal Poly/Clas
+ses/AAA Current/CSC 3665/Labs/Lab 1/CSC-3665-Lab1/schoolsearch.py"
+Input Command: Q
+
+sage@Sage Kaplan CSC-3665-Lab1 % 
