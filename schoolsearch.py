@@ -62,13 +62,19 @@ def receive_input(students):                                                    
             if len(arguments) == 0:                                             #missing student name
                 continue
 
-            last_name = arguments[0]                                                                #gets student last name
+            if len(arguments) > 2:                                              #too many student arguments
+                continue
 
-            for student in students:                                                                #searches student objects
-                if student.last_name == last_name:                                                  #matching student
-                    if len(arguments) > 1 and (arguments[1] == "B" or arguments[1] == "Bus"):       #bus option
+            if len(arguments) == 2 and arguments[1] != "B" and arguments[1] != "Bus":       #invalid student option
+                continue
+
+            last_name = arguments[0]                                                        #gets student last name
+
+            for student in students:                                                        #searches student objects
+                if student.last_name == last_name:                                          #matching student
+                    if len(arguments) == 2:                                                 #bus option
                         print(f"{student.last_name},{student.first_name},{student.bus}")
-                    else:                                                                           #normal student search
+                    else:                                                                   #normal student search
                         print(f"{student.last_name},{student.first_name},{student.grade},{student.classroom},{student.teacher_last},{student.teacher_first}")
 
         elif command.startswith("T:") or command.startswith("Teacher:"):        #checks for teacher
@@ -104,12 +110,18 @@ def receive_input(students):                                                    
             if len(arguments) == 0:                                             #checks for missing grade
                 continue
 
-            try:                                                                            #attempts to convert grade to int
-                grade = int(arguments[0])                                                   #gets grade number
-            except ValueError:                                                              #handles invalid grade
-                continue                                                                    #returns to input prompt
+            try:                                                                #attempts to convert grade to int
+                grade = int(arguments[0])                                       #gets grade number
+            except ValueError:                                                  #handles invalid grade
+                continue                                                        #returns to input prompt
 
-            if len(arguments) > 1 and (arguments[1] == "H" or arguments[1] == "High"):      #highest GPA option
+            if len(arguments) > 2:                                              #checks for too many grade arguments
+                continue
+
+            if len(arguments) == 2 and arguments[1] not in ("H", "High", "L", "Low"):       #checks for invalid grade option
+                continue
+
+            if len(arguments) == 2 and (arguments[1] == "H" or arguments[1] == "High"):     #highest GPA option
                 highest_student = None                                                      #stores student with highest GPA found
 
                 for student in students:                                                    #searches all student objects
@@ -120,7 +132,7 @@ def receive_input(students):                                                    
                 if highest_student is not None:                                             #checks that a matching student was found
                     print(f"{highest_student.last_name},{highest_student.first_name},{highest_student.gpa},{highest_student.teacher_last},{highest_student.teacher_first},{highest_student.bus}")
 
-            elif len(arguments) > 1 and (arguments[1] == "L" or arguments[1] == "Low"):     #lowest GPA option
+            elif len(arguments) == 2 and (arguments[1] == "L" or arguments[1] == "Low"):    #lowest GPA option
                 lowest_student = None                                                       #stores student with lowest GPA found
 
                 for student in students:                                                    #searches all student objects
@@ -131,10 +143,10 @@ def receive_input(students):                                                    
                 if lowest_student is not None:                                              #checks that a matching student was found
                     print(f"{lowest_student.last_name},{lowest_student.first_name},{lowest_student.gpa},{lowest_student.teacher_last},{lowest_student.teacher_first},{lowest_student.bus}")
 
-            else:                                                               #normal grade search
-                for student in students:                                        #searches all student objects
-                    if student.grade == grade:                                  #checks for matching grade
-                        print(f"{student.last_name},{student.first_name}")      #prints matching student name
+            else:                                                                           #normal grade search
+                for student in students:                                                    #searches all student objects
+                    if student.grade == grade:                                              #checks for matching grade
+                        print(f"{student.last_name},{student.first_name}")                  #prints matching student name
 
         elif command.startswith("A:") or command.startswith("Average:"):        #checks for average
             arguments = command.split(":", 1)[1].strip().split()                #gets arguments after command
