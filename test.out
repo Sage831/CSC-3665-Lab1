@@ -1,0 +1,134 @@
+// CSC 365
+// Lab 1 Test Suite
+
+// Test Case 1:
+// Tests Requirements R3, E1
+// invalid grade argument
+// expected output: <empty line>
+G: SWEDLUND
+
+// Test Case 2:
+// Tests Requirements R3, R4
+// short form command name, existing student
+// expected output: SWEDLUND,SHARRI,3,107,FAFARD,ROCIO
+S: SWEDLUND
+
+// Test Case 3:
+// Tests Requirements R3, R5
+// short form student command with bus option
+// expected output: SWEDLUND,SHARRI,55
+S: SWEDLUND B
+
+// Test Case 4:
+// Tests Requirements R3, R6
+// long form teacher command, existing teacher
+// expected output:
+// CORKER,CARTER
+// IMMERMAN,DEVIN
+// RAPOSE,ALONZO
+// OGAS,ERVIN
+// MASSART,ELDON
+// BEX,TAMESHA
+Teacher: HANTZ
+
+// Test Case 5:
+// Tests Requirements R3, R7
+// short form grade command, existing grade
+// expected output:
+// WOOLERY,NOLAN
+// VILARDO,EMMANUEL
+// LIBRANDI,TODD
+// HAVIR,BOBBIE
+// SARAO,DIEDRA
+// VANCOTT,MIKE
+// WICINSKY,TERESE
+// KOZOLA,BUSTER
+// MULLINGS,LEIGHANN
+// BUSSMANN,BILLY
+// BERBES,DICK
+// MULGREW,RANDELL
+// TOWLEY,LANE
+G: 2
+
+// Test Case 6:
+// Tests Requirements R3, R8
+// short form bus command, existing bus route
+// expected output:
+// SWEDLUND,SHARRI,3,107
+// ZAPPAVIGNA,ELLIOTT,6,106
+// SAENPHIMMACHA,NUMBERS,6,111
+// BOYTER,WAN,6,102
+// KOZOLA,BUSTER,2,108
+// DEMARTINI,DEWAYNE,6,102
+// BEX,TAMESHA,4,105
+// WERST,LEON,6,111
+// LAMKIN,TAMA,6,111
+B: 55
+
+// Test Case 7:
+// Tests Requirements R3, R9
+// short form grade command with low GPA option
+// expected output: CIGANEK,MANIE,2.79,FAFARD,ROCIO,53
+G: 3 L
+
+// Test Case 8:
+// Tests Requirements R3, R9
+// long form grade command with high GPA option
+// expected output: WICINSKY,TERESE,3.22,HAMER,GAVIN,53
+Grade: 2 H
+
+// Test Case 9:
+// Tests Requirements R3, R10
+// short form average command, existing grade
+// expected output: 3,3.05
+A: 3
+
+// Test Case 10:
+// Tests Requirements R3, R11
+// short form info command
+// expected output:
+// 0: 0
+// 1: 2
+// 2: 13
+// 3: 9
+// 4: 15
+// 5: 0
+// 6: 21
+I
+
+// Test Case 11:
+// Tests Requirements R3, R11
+// long form info command
+// expected output:
+// 0: 0
+// 1: 2
+// 2: 13
+// 3: 9
+// 4: 15
+// 5: 0
+// 6: 21
+Info
+
+// Test Case 12:
+// Tests Requirements R3, E1
+// command names are case sensitive, unrecognized command
+// expected output: <empty line>
+INFO
+
+// Test Case 13:
+// Tests Requirements R3, R7
+// valid grade command with no matching students
+// expected output: <empty line>
+G: 24
+
+// Test Case 14:
+// Tests Requirements R3, R12
+// quit command
+// expected output: program terminates
+Q
+
+// Manual E1 Test
+// Tests Requirements R13, E1
+// temporarily renamed students.txt before running schoolsearch.py
+// expected output: students.txt not found
+
