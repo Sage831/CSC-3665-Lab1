@@ -26,3 +26,4 @@ tests.txt: Test suite
 tests.out: Output from testing
 writeup-lab1.pdf: Lab writeup
 README: Instructions for running the program
+
